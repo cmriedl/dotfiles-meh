@@ -1,0 +1,12 @@
+! font
+URxvt*font: xft:xos4 Terminus:pixelsize=10
+
+! terminal window
+URxvt*background: black
+URxvt*foreground: grey50
+URxvt*borderless: true
+
+! scrollbar
+URxvt*scrollBar: true
+URxvt*scrollBar_right: true
+URxvt*scrollstyle: plain
