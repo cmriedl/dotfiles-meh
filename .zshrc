@@ -18,4 +18,5 @@ precmd() { print -Pn "\e]0;%n@%~\a" }
 setopt HIST_IGNORE_DUPS
 
 # Config file bare git repository management
-alias config='/usr/bin/git --git-dir=$HOME/.myconfig --work-tree=$HOME'
+alias myconfig='/usr/bin/git --git-dir=$HOME/.myconfig --work-tree=$HOME'
+alias myconfigclone='/usr/bin/git clone https://github.com/wrwlf/dotfiles.git $HOME/.myconfig'
