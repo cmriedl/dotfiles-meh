@@ -14,9 +14,12 @@ compinit
 # Terminal title
 precmd() { print -Pn "\e]0;%n@%~\a" }
 
-# Do not write duplicated commands to the history
+# Terminal prompt
+PROMPT='%F{green}%n>%f '
+
 setopt HIST_IGNORE_DUPS
+setopt complete_aliases
 
 # Config file bare git repository management
-alias myconfig='/usr/bin/git --git-dir=$HOME/.myconfig --work-tree=$HOME'
-alias myconfigclone='/usr/bin/git clone https://github.com/wrwlf/dotfiles.git $HOME/.myconfig'
+alias myconfig='git --git-dir=$HOME/.myconfig --work-tree=$HOME'
+alias myconfig-clone='git clone https://github.com/wrwlf/dotfiles.git $HOME/.myconfig'
