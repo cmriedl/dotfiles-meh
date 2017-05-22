@@ -18,7 +18,8 @@ precmd() { print -Pn "\e]0;%n@%~\a" }
 PROMPT='%F{green}%n>%f '
 
 setopt HIST_IGNORE_DUPS
-setopt complete_aliases
+setopt no_complete_aliases
+unsetopt complete_aliases
 
 # Config file bare git repository management
 alias myconfig='git --git-dir=$HOME/.myconfig --work-tree=$HOME'
