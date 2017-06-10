@@ -11,6 +11,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Exports
+export CC=clang
+export CXX=clang++
+
 # Terminal title
 precmd() { print -Pn "\e]0;%n@%~\a" }
 
