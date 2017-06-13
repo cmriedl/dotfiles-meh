@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.zshhist
 HISTSIZE=1024
-SAVEHIST=0
+SAVEHIST=1024
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -11,7 +11,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Exports
+# Python virtualenvwrapper
+source /usr/bin/virtualenvwrapper.sh  
+
+# Use clang compiler
 export CC=clang
 export CXX=clang++
 
@@ -19,7 +22,9 @@ export CXX=clang++
 precmd() { print -Pn "\e]0;%n@%~\a" }
 
 # Terminal prompt
+ZLE_RPROMPT_INDENT=0 # prevent useless space after rprompt
 PROMPT='%F{green}%n>%f '
+RPROMPT='%F{green}<%3d%f'
 
 setopt HIST_IGNORE_DUPS
 setopt no_complete_aliases
