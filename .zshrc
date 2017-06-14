@@ -22,9 +22,7 @@ export CXX=clang++
 precmd() { print -Pn "\e]0;%n@%~\a" }
 
 # Terminal prompt
-ZLE_RPROMPT_INDENT=0 # prevent useless space after rprompt
-PROMPT='%F{green}%n>%f '
-RPROMPT='%F{green}<%3d%f'
+PROMPT='%F{green}<%3d>%f '
 
 setopt HIST_IGNORE_DUPS
 setopt no_complete_aliases
