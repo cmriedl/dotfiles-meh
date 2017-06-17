@@ -1,5 +1,5 @@
 ! font
-URxvt*font: xft:xos4 Terminus:pixelsize=10
+URxvt*font: xft:xos4 Terminus:size=10:antialias=false
 
 ! terminal window
 URxvt*background: black
@@ -10,3 +10,5 @@ URxvt*borderless: true
 URxvt*scrollBar: true
 URxvt*scrollBar_right: true
 URxvt*scrollstyle: plain
+
+URxvt*color4: #282b2e
