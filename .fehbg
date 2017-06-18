@@ -1,0 +1,2 @@
+#!/bin/sh
+feh  --bg-scale '/home/wrwlf/downloads/mountains.jpg' 

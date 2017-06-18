@@ -8,6 +8,9 @@ URxvt*lineSpace: 0
 URxvt*background: 12
 URxvt*foreground: 15 
 URxvt*borderless: true
+URxvt*transparent: true
+URxvt*shading: 20
+URxvt*tintColor: 12
 
 ! scrollbar
 URxvt*scrollBar: true

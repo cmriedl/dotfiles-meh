@@ -1,1 +1,3 @@
 #include ".config/.Xresources-urxvt"
+
+Xcursor.theme: pixelfun3

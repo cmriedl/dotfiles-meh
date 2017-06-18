@@ -32,5 +32,6 @@ fi
 
 xrandr --dpi 96
 xset r rate 400 44
+sh ~/.fehbg
 
 exec i3
