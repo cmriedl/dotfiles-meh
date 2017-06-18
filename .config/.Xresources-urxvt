@@ -1,9 +1,12 @@
 ! font
-URxvt*font: xft:xos4 Terminus:size=10:antialias=false
+URxvt*font: xft:Monoid:size=9:antialias=true:style=regular
+URxvt*boldFont: xft:Monoid:size=9:antialias=true:style=bold
+URxvt*letterSpace: -1
+URxvt*lineSpace: 0
 
 ! terminal window
-URxvt*background: black
-URxvt*foreground: grey50
+URxvt*background: 12
+URxvt*foreground: 15 
 URxvt*borderless: true
 
 ! scrollbar
@@ -11,4 +14,8 @@ URxvt*scrollBar: true
 URxvt*scrollBar_right: true
 URxvt*scrollstyle: plain
 
-URxvt*color4: #282b2e
+! color overrides
+URxvt*color10: #93c763
+URxvt*color11: #ffcd22
+URxvt*color12: #282b2e
+URxvt*color15: #b5b5b5
