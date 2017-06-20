@@ -1,3 +1,4 @@
+#include ".config/.Xresources-color"
 #include ".config/.Xresources-urxvt"
 
 Xcursor.theme: pixelfun3

@@ -5,20 +5,14 @@ URxvt*letterSpace: -1
 URxvt*lineSpace: 0
 
 ! terminal window
-URxvt*background: 12
-URxvt*foreground: 15 
+URxvt*background: 8
+URxvt*foreground: 7
 URxvt*borderless: true
 URxvt*transparent: true
 URxvt*shading: 20
-URxvt*tintColor: 12
+URxvt*tintColor: 8
 
 ! scrollbar
 URxvt*scrollBar: true
 URxvt*scrollBar_right: true
 URxvt*scrollstyle: plain
-
-! color overrides
-URxvt*color10: #93c763
-URxvt*color11: #ffcd22
-URxvt*color12: #282b2e
-URxvt*color15: #b5b5b5

@@ -22,7 +22,7 @@ export CXX=clang++
 precmd() { print -Pn "\e]0;%n@%~\a" }
 
 # Terminal prompt
-PROMPT='%F{green}<%3d>%f '
+PROMPT='%F{11}<%3d>%f '
 
 setopt HIST_IGNORE_DUPS
 setopt no_complete_aliases

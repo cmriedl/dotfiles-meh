@@ -15,14 +15,32 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:Monoid 12px
 
+# Windows
+new_window pixel 2
+
 # Colors
-client.focused #5fff00 #005f00 #5fff00 #5fff00 #000000
+set_from_resource $black     i3wm.color0
+set_from_resource $bluegray  i3wm.color8
+set_from_resource $limegreen i3wm.color10
+set_from_resource $yellow    i3wm.color3
+set_from_resource $orange    i3wm.color11
+set_from_resource $steelblue i3wm.color6
+set_from_resource $darkblue  i3wm.color14
+set_from_resource $white     i3wm.color7
+set_from_resource $lightgray i3wm.color15 
+
+# Window colors         border    background  text    indicator   child_border
+client.focused          $orange   $bluegray   $white  $steelblue  $orange
+client.focused_inactive $bluegray $bluegray   $white  $orange     $bluegray
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
+
+# start firefox
+bindcode $mod+107 exec firefox
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -144,6 +162,14 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	colors {
+		background $bluegray
+		statusline $steelblue
+		separator $steelblue
+		
+		focused_workspace $orange $bluegray $steelblue
+		inactive_workspace $bluegray $bluegray $steelblue
+	}
 	position top
         status_command i3status
 }
