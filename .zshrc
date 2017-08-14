@@ -31,3 +31,6 @@ unsetopt complete_aliases
 # Config file bare git repository management
 alias myconfig='git --git-dir=$HOME/.myconfig --work-tree=$HOME'
 alias myconfig-clone='git clone https://github.com/wrwlf/dotfiles.git $HOME/.myconfig'
+
+# Other shit
+alias mirrorsync="reflector --country 'United States' --protocol https --sort rate --include '.*\.edu'"
