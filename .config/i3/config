@@ -33,6 +33,12 @@ set_from_resource $lightgray i3wm.color15
 client.focused          $orange   $bluegray   $white  $steelblue  $orange
 client.focused_inactive $bluegray $bluegray   $white  $orange     $bluegray
 
+# pulseaudio
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute   @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
