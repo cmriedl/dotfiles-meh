@@ -34,3 +34,5 @@ alias myconfig-clone='git clone https://github.com/wrwlf/dotfiles.git $HOME/.myc
 
 # Other shit
 alias mirrorsync="reflector --country 'United States' --protocol https --sort rate --include '.*\.edu'"
+alias enablemonitor="xrandr --output HDMI-2 --auto --above eDP-1"
+alias disablemonitor="xrandr --output HDMI-2 --off"
