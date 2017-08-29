@@ -1,9 +1,12 @@
 colorscheme dracula
 
+call plug#begin()
+Plug 'vim-pandoc/vim-pandoc'
+call plug#end()
+
 filetype plugin on
 filetype plugin indent on
 
-syntax on
 set number
 set nowrap
 set noswapfile
